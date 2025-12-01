@@ -1,4 +1,3 @@
-// src/services/storage.ts
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { User, Workout, Theme } from '../types';
 
@@ -10,7 +9,6 @@ const KEYS = {
 };
 
 export const StorageService = {
-  // Welcome screen
   async getHasSeenWelcome(): Promise<boolean> {
     try {
       const value = await AsyncStorage.getItem(KEYS.HAS_SEEN_WELCOME);
@@ -29,7 +27,6 @@ export const StorageService = {
     }
   },
 
-  // Theme
   async getTheme(): Promise<Theme> {
     try {
       const value = await AsyncStorage.getItem(KEYS.THEME);
@@ -48,7 +45,6 @@ export const StorageService = {
     }
   },
 
-  // User data
   async getUserData(): Promise<User | null> {
     try {
       const value = await AsyncStorage.getItem(KEYS.USER_DATA);
@@ -75,7 +71,6 @@ export const StorageService = {
     }
   },
 
-  // Workouts
   async getWorkouts(): Promise<Workout[]> {
     try {
       const value = await AsyncStorage.getItem(KEYS.WORKOUTS);

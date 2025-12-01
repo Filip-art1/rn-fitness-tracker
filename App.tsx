@@ -1,4 +1,3 @@
-// App.tsx
 import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'react-native';
 import { PaperProvider, MD3LightTheme, MD3DarkTheme } from 'react-native-paper';

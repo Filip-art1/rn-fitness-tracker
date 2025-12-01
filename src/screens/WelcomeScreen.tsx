@@ -1,4 +1,3 @@
-// src/screens/WelcomeScreen.tsx
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { Button, Text, useTheme } from 'react-native-paper';

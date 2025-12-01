@@ -1,4 +1,3 @@
-// src/contexts/AuthContext.tsx
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { supabase } from "../services/supabase";
 import { StorageService } from "../services/storage";
@@ -138,7 +137,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 const signOut = async () => {
   await supabase.auth.signOut();
   await AsyncStorage.removeItem(SESSION_KEY);
-  // NE BRIŠEMO user podatke - StorageService.clearUserData()
   setUser(null);
 };
 

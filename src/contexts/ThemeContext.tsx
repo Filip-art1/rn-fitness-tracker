@@ -1,4 +1,3 @@
-// src/contexts/ThemeContext.tsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { ThemeContextType, Theme } from '../types';
 import { StorageService } from '../services/storage';

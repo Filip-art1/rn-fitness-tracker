@@ -1,4 +1,3 @@
-// src/screens/HomeScreen.tsx
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { Text, Searchbar, Card, Chip, useTheme } from 'react-native-paper';
@@ -9,7 +8,6 @@ interface HomeScreenProps {
   navigation: any;
 }
 
-// Dummy podaci za testiranje
 const INITIAL_WORKOUTS: Workout[] = [
   {
     id: '1',
@@ -76,7 +74,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   const loadWorkouts = async () => {
     let savedWorkouts = await StorageService.getWorkouts();
     
-    // Ako nema sačuvanih, koristi dummy podatke
+    
     if (savedWorkouts.length === 0) {
       savedWorkouts = INITIAL_WORKOUTS;
       await StorageService.setWorkouts(savedWorkouts);
