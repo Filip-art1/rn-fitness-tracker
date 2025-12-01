@@ -14,26 +14,31 @@ Mobilna aplikacija za praćenje treninga razvijena sa React Native i Expo.
 ## 📦 Instalacija
 
 1. **Kloniraj repo:**
+
 ```bash
-git clone https://github.com/tvoj-username/fitness-tracker.git
+git clone https://github.com/Filip-art1/rn-fitness-tracker.git
 cd fitness-tracker
 ```
 
 2. **Instaliraj dependencies:**
+
 ```bash
 npm install --legacy-peer-deps
 ```
 
 3. **Podesi Supabase:**
+
    - Napravi projekat na [supabase.com](https://supabase.com)
    - Kopiraj `.env.example` u `.env`
    - Dodaj svoj Project URL i anon key
 
 4. **Isključi email confirmation u Supabase:**
+
    - Authentication → Settings → Email Auth
    - Isključi "Confirm email"
 
 5. **Pokreni:**
+
 ```bash
 npm start
 ```
